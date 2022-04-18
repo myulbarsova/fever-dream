@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{199557B9-1300-8B67-A099-569E8FC02338}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/LevelManager.cs">
+    <Files>
+      <File FileName="Assets/Scenes/LevelManager.cs" Line="16" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fever Dream (1)" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="35820871-d4ba-4125-8ea9-826bb66f2022" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
