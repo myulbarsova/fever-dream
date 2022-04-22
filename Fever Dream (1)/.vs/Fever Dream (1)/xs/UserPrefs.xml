@@ -1,19 +1,26 @@
 ﻿<Properties StartupConfiguration="{199557B9-1300-8B67-A099-569E8FC02338}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scenes/LevelManager.cs" Line="16" Column="24" />
+      <File FileName="Assets/Scenes/LevelManager.cs" Line="11" Column="37" />
+      <File FileName="Assets/Scenes/PlayerController.cs" Line="67" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Fever Dream (1)" expanded="True" selected="True" />
+          <Node name="Fever Dream (1)" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scenes" expanded="True">
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="35820871-d4ba-4125-8ea9-826bb66f2022" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="188ebecc-22ff-41d3-9682-01c8c9d84e0e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
