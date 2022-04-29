@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Movement mechanics variables
-    public float maxSpeed = 3.4f;
-    public float jumpHeight = 20.0f;
+    public float maxSpeed = 3.9f;
+    public float jumpHeight = 12.0f;
     public float gravityScale = 1.5f;
 
     public Camera mainCamera;
@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D r2d;
     CapsuleCollider2D mainCollider;
     Transform t;
+    Animator animator; // M
 
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
         // initialize object component variables
         t = transform;
         r2d = GetComponent<Rigidbody2D>();
@@ -48,26 +50,33 @@ public class PlayerController : MonoBehaviour
         // Movement controls
         if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
         {
+            animator.SetInteger("AnimState", 1);
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 moveDirection = -1;
+
+                gameObject.transform.localScale = new Vector3(-1, 1, 1);
             }
             else
             {
                 moveDirection = 1;
+                gameObject.transform.localScale = new Vector3(1, 1, 1);
             }
         }
         else
         {
             if (isGrounded || r2d.velocity.magnitude < 0.01f)
             {
+                animator.SetInteger("AnimState", 0);
                 moveDirection = 0;
+                
             }
         }
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
+            animator.SetInteger("AnimState", 3);// not working neet to change -maddie (jump anim)
             // Apply movement velocity in the y direction
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }

@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\FloorScript.cs" />
     <Compile Include="Assets\Scenes\LevelManager.cs" />
     <Compile Include="Assets\Scenes\PlayerController.cs" />
     <Reference Include="UnityEngine">
